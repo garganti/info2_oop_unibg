@@ -4,5 +4,7 @@ class PrimoProgramma {
 	public static void main(String[] args) {
 		ConsoleOutputManager video = new ConsoleOutputManager();
 		video.println("Ecco il mio primo programma!");
+		String s ="sss";
+		video.println(s.toUpperCase());
 	}
 }
