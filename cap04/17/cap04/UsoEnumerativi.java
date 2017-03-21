@@ -15,7 +15,7 @@ import prog.utili.MeseDellAnno;
 public class UsoEnumerativi {
 
 	// quanti giorni mancano dal primo di mese m alla fine dell'anno (non bisestile)
-	public int giorniFineAnno(MeseDellAnno m){
+	public static int giorniFineAnno(MeseDellAnno m){
 		/*switch (m) {
 		case GENNAIO:
 			return 365;
@@ -31,11 +31,11 @@ public class UsoEnumerativi {
 			quantiG += MeseDellAnno.FEBBRAIO.numeroGiorni();
 		case MARZO:
 			quantiG += MeseDellAnno.MARZO.numeroGiorni();
-			//
+			// TO BE COMPLETED
 		default:
 			break;
 		}
-		
+		return quantiG;
 	}
 	
 	
@@ -55,9 +55,10 @@ public class UsoEnumerativi {
 		GiornoDellaSettimana gsett = data.getGiornoDellaSettimana();
 		out.println("giorno " + gsett.name());
 		// calcolo dei giorni che mancano alla fine anno
-		
-		
-		
+		int giorniFineAnno = giorniFineAnno(mese);
+		// tolgo i giorni di questo mese
+		giorniFineAnno -= g;
+		out.println("mancano " + giorniFineAnno + " alla fine dell'anno");
 	}
 	
 }
