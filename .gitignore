@@ -11,6 +11,7 @@
 hs_err_pid*
 
 bin/
+bin
 
 # directory di anni passati
 06/
