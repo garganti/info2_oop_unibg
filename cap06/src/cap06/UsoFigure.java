@@ -12,8 +12,15 @@ public class UsoFigure {
 		f = new Rettangolo(3, 6.7);
 		f = new Cerchio(6);
 		
-		f = new Figura(); // non posso è astratta
-			
+		//f = new Figura(); // non posso è astratta
+		System.out.println(f.getArea());	
+		
+		// 
+		Cerchio c = f; // questo sbgaliato in compilazione
+		
+		Cerchio c2 = (Cerchio)f;
+		
+		
 	}
 }
 
