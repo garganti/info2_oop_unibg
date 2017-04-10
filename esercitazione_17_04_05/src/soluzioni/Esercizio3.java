@@ -1,4 +1,4 @@
-package Es1;
+package soluzioni;
 
 import java.util.ArrayList;
 import java.util.StringTokenizer;
