@@ -15,7 +15,7 @@ public class EccControllate {
 			FileReader f = new FileReader("pippo");
 		} catch (FileNotFoundException e) {
 			System.out.println(" non ho trovato il file");
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 	public static void leggiFile2() throws FileNotFoundException{
