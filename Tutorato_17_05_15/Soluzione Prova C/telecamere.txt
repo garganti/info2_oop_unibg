@@ -1,0 +1,3 @@
+N;bivio k89;7
+A;incrocio A5;40.6;0345555
+S;casello;70.6;sony 
