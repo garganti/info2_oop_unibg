@@ -1,0 +1,13 @@
+PROVA B – 9/2/17 – LISTA DINAMICA INTERI
+
+Crea una classa ListaInteri che è una lista dinamica 
+(lista semplicemente linkata) di interi. 
+Deve avere i seguenti metodi
+* inserimento di un intero (in testa o dove preferisci, non è importante)
+* toString per avere una stringa con i numeri della lista
+* somma che restituisce la somma degli interi nella lista
+* max che restituisce il massimo degli interi nella lista
+* media che restituisce la media
+
+Scrivi un main in cui inserisci una lista di numeri a 
+tuo piacimento e stampi la somma, la media e il massimo chiamando i rispettivi metodi.

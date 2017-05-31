@@ -1,0 +1,38 @@
+PROVA A  -  ALBERO BINARIO DI STUDENTI – 9/6/2016
+
+Implementa un albero binario di ricerca non generico per memorizzare 
+in modo ordinato un insieme di studenti. 
+Implementa sia l'albero che la classe studente 
+in un unico file con nome tuo CognomeNome.java usando questo schema
+
+
+CognomeNome.java
+
+class Studente{
+....
+}
+
+class AlberoStudenti{
+
+....
+
+}
+
+public class CognomeNome{
+	... main(....){
+		.....
+	}
+}
+
+
+Uno studente ha come campi solo la matricola ed è ordinato in 
+modo crescente rispetto la matricola (non è necessario che implementi Comparable)
+
+L'albero deve avere i seguenti metodi:
+
+* insert di inserimento di uno studente passato come argomento
+* find di ricerca rispetto la matricola (che restituisce true se lo studente con la matricola passata al find è contenuto nell'albero).
+* print che stampa il contenuto dell'albero in ordine
+
+Nel main fai un po' di prove in cui provi ad inserire programmaticamente qualche studente, stampare l'abero e cercare studenti. Non fare alcun input con l'utente.
+
