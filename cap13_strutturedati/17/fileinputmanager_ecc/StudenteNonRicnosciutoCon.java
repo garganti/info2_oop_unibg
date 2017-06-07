@@ -1,4 +1,4 @@
-package cap13_strutturedati.proveB;
+package fileinputmanager_ecc;
 
 public class StudenteNonRicnosciutoCon extends Exception {
 

@@ -1,4 +1,4 @@
-package cap13_strutturedati.proveB;
+package fileinputmanager_ecc;
 
 import java.util.ArrayList;
 import java.util.List;

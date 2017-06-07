@@ -1,0 +1,13 @@
+package provaB.gen17;
+PROVA B – 19/1/17 – LISTA NUMERI PARI
+
+Crea una class ListaPari100 che è lista dinamica (lista semplicemente linkata) 
+di interi (anche non generica) che contiene tutti i numeri pari da 1 a 100. 
+(se vuoi puoi anche evitare di avere un metodo di inserimento della lista, 
+ma inserirli direttamente tu nel costruttore).
+
+Scrivi un metodo somma di ListaPari100 che restituisce la somma dei numeri nella lista.
+
+Scrivi un main in cui chiami somma con una lista dei numeri pari e stampi il risultato.
+
+Se vuoi scrivi anche metodo print in ListaPari100 che stampa il contenuto della lista

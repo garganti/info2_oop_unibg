@@ -1,4 +1,5 @@
-package provaB;
+package provaB.compitino;
+
 
 class Studente{ int m;}
 

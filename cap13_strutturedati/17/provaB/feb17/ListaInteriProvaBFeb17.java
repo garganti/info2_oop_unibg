@@ -1,4 +1,4 @@
-package cap13_strutturedati.proveB;
+package provaB.feb17;
 /*Crea una classa ListaInteri che è una lista dinamica 
 (lista semplicemente linkata) di interi. Deve avere i seguenti metodi
 inserimento di un intero (in testa o dove preferisci, non è importante)
