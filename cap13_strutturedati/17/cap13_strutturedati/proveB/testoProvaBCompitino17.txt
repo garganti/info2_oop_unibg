@@ -26,7 +26,8 @@ public class CognomeNome{
 
 
 Uno studente ha come campi solo la matricola ed è ordinato in 
-modo crescente rispetto la matricola (non è necessario che implementi Comparable)
+modo crescente rispetto la matricola (non è necessario che implementi 
+Comparable)
 
 L'albero deve avere i seguenti metodi:
 

@@ -42,6 +42,22 @@ public class Albero<E extends Comparable<E>> {
 		System.out.print(radice.dato + " ");
 		radice.dx.printInOrder();
 	}
+	// restituisce true se e è nell'albero
+	boolean trova(E e){
+		System.out.println("cercando " + e +" in ");
+		printInOrder();
+		System.out.println("*****");
+		// albero vuoto
+		if (radice == null) return false;
+		// altrimenti
+		int c = radice.dato.compareTo(e);
+		// se =
+		if (c == 0) return true;
+		// se radice < e 
+		else if (c <0) return radice.dx.trova(e);
+		// c > 0 [radice > e]
+		else return (radice.sx.trova(e));
+	}
 	
 	public static void main(String[] args) {
 		Albero<String> nomi = new Albero<>();
@@ -56,5 +72,10 @@ public class Albero<E extends Comparable<E>> {
 		System.out.println();
 		nomi.insert("kio");
 		nomi.printInOrder();
+		System.out.println();
+		//
+		System.out.println(nomi.trova("kio"));
+		System.out.println(nomi.trova("kilo"));
+		
 	}
 }
