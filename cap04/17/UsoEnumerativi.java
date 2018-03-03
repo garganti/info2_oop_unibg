@@ -1,4 +1,4 @@
-package cap04;
+
 
 import prog.io.ConsoleInputManager;
 import prog.io.ConsoleOutputManager;
