@@ -1,5 +1,3 @@
-package esercitazione1_14;
-
 import prog.io.ConsoleInputManager;
 import prog.io.ConsoleOutputManager;
 
