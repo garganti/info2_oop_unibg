@@ -1,0 +1,26 @@
+ Si considerino le seguenti specifiche:
+
+    Un elemento multimediale è una immagine, un filmato o una registrazione audio 
+    identificato da un titolo (una stringa non vuota).
+    
+    Un elemento è riproducibile se ha una durata (un valore positivo di tipo int) e un metodo play()
+    Una registrazione audio è riproducibile e ha associato anche un volume (un valore positivo di tipo int) 
+    e i metodi weaker() e louder() per regolarlo. Se riprodotta, ripete per un numero di volte pari alla 
+    durata la stampa del titolo concatenato a una sequenza di punti esclamativi di lunghezza pari al volume 
+    (una stampa per riga).
+    
+    Un filmato è riproducibile e ha associato un volume regolabile analogo a quello delle registrazioni audio e 
+    anche una luminosità (un valore positivo di tipo int) e i metodi brighter() e darker() per regolarla. 
+    Se riprodotta, ripete per un numero di volte pari alla durata la stampa del titolo concatenato a una 
+    sequenza di punti esclamativi di lunghezza pari al volume e poi a una sequenza di asterischi di lunghezza 
+    pari alla luminosità (una stampa per riga).
+    
+    Un'immagine non è riproducibile, ma ha una luminosità regolabile analoga a quella dei filmati e un 
+    metodo show() che stampa il titolo concatenato a una sequenza di asterischi di lunghezza pari alla luminosità
+    Eseguire un oggetto multimediale significa invocarne il metodo show() se è un'immagine o il metodo play() 
+    se è riproducibile.
+
+Organizzare opportunamente con classi astratte, interfacce e classi concrete il codice di un 
+lettore multimediale che memorizza 5 elementi (creati con valori letti da tastiera) in un array e 
+poi chiede ripetutamente all'utente quale oggetto eseguire (leggendo un intero da 1 a 5 oppure 0 per finire) e
+ dopo ogni esecuzione fornisce la possibilità di regolarne eventuali parametri (volume / luminosità). 

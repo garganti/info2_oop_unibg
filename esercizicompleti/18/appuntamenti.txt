@@ -1,0 +1,11 @@
+P13.1.
+
+Scrivete  un  programma  per  gestire  un’agenda  di  appuntamenti.  Create  una  
+classe Appointment che memorizzi una descrizione dell’appuntamento, 
+il giorno dell’appuntamento, l’ora di inizio e l’ora di fine. 
+
+Il programma deve conservare gli appuntamenti in un vettore 
+ordinato.  Gli  utenti  possono  aggiungere  appuntamenti  e  visualizzare  tutti  gli  appuntamenti  di  
+un determinato giorno. Quando viene aggiunto un nuovo appuntamento, utilizzate una ricerca 
+binaria per stabilire in quale posizione del vettore va inserito: non aggiungetelo se è in 
+conflitto con altri appuntamenti ma invece lancia eccezione
