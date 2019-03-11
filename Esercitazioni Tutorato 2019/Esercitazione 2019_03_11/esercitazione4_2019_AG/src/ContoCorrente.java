@@ -29,6 +29,7 @@ public class ContoCorrente {
 	// costruttore senza numero di conto, che verrà 
 	// assegnato di volta in volta incrementando un contatore
 	static private int numeroContiCorrenti = 0; // cquanti conti correnti?
+	
 	public ContoCorrente(String proprietario) {
 		this(numeroContiCorrenti +1,proprietario,0);
 	}
