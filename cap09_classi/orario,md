@@ -1,0 +1,12 @@
+# Orario
+Un orario rappresenta un ora nella giornata
+con ore, minuti e secondi
+Posso costruirlo con ore, min, sec o
+con una string del formato "12:30:14"
+Se passo ora >= 24, riduco a max 23 
+idem per minuti (max 23)
+idem per secondi (max 59)
+
+## operazioni
+- stampa
+- calcola secondi tra due orari
