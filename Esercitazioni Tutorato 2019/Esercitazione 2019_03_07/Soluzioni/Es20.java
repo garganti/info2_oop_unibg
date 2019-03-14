@@ -21,14 +21,19 @@ public class Es20 {
 					switch (c) {
 					case 'a':
 						counta++;
+						break;
 					case 'e':
 						counte++;
+						break;
 					case 'i':
 						counti++;
+						break;
 					case 'o':
 						counto++;
+						break;
 					case 'u':
 						countu++;
+						break;
 					}
 				}
 				;
