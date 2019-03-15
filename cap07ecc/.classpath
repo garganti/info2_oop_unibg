@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="17"/>
 	<classpathentry kind="src" path="18"/>
+	<classpathentry kind="src" path="19"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/prog/prog-4ed.jar">
 		<attributes>

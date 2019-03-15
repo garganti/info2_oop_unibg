@@ -1,0 +1,1 @@
+esercizio 10.6 libro pisani
