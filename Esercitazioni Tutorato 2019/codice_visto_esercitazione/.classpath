@@ -2,6 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src_es5"/>
 	<classpathentry kind="src" path="src_es2"/>
+	<classpathentry kind="src" path="src_es33"/>
+	<classpathentry kind="src" path="src_es34"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/prog/prog-4ed.jar">
 		<attributes>
