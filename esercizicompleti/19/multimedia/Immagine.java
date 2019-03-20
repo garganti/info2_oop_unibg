@@ -11,4 +11,7 @@ public class Immagine extends ElementoMultimediale{
 	void brighter(){} 
 	void darker(){}
 	
+	public void show() {
+	
+	}
 }

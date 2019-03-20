@@ -2,7 +2,7 @@
 
     Un elemento multimediale è una immagine, un filmato o una registrazione audio 
     identificato da un titolo (una stringa non vuota).
-    
+
     Un elemento è riproducibile se ha una durata (un valore positivo di tipo int) e un metodo play()
     Una registrazione audio è riproducibile e ha associato anche un volume (un valore positivo di tipo int) 
     e i metodi weaker() e louder() per regolarlo. Se riprodotta, ripete per un numero di volte pari alla 
