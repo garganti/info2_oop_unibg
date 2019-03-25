@@ -18,10 +18,10 @@ enum GiornoSettimana {
 	}
 
 	// domani: che giorno è domani
-	GiornoSettimana domani() {
+	UsoEnum19 domani() {
 		int oggi_ord = this.ordinal();
 		int dom_ord = (oggi_ord + 1) % 7;
-		GiornoSettimana domani = values()[dom_ord];
+		UsoEnum19 domani = values()[dom_ord];
 		return domani;
 		/*
 		 * switch (this) { case LUN: return MAR; // .... default: break; }
@@ -29,10 +29,10 @@ enum GiornoSettimana {
 	}
 
 	// ieri: che giorno fu ieri
-	GiornoSettimana ieri() {
+	UsoEnum19 ieri() {
 		int oggi_ord = this.ordinal();
 		int ieri_ord = (oggi_ord + 6) % 7;
-		GiornoSettimana ieri = values()[ieri_ord];
+		UsoEnum19 ieri = values()[ieri_ord];
 		return ieri;
 	}
 
@@ -48,8 +48,8 @@ enum GiornoSettimana {
 	}
 
 	// metodo che data una stringa restituisce il giorno della settimana
-	static GiornoSettimana parse(String s) {
-		for (GiornoSettimana gs : GiornoSettimana.values()) {
+	static UsoEnum19 parse(String s) {
+		for (UsoEnum19 gs : UsoEnum19.values()) {
 			if (gs.name().equals(s)) {
 				return gs;
 			}
@@ -66,14 +66,14 @@ enum GiornoSettimana {
 public class ProvaEnum {
 	public static void main(String[] args) {
 		String giorno = "VEN";
-		GiornoSettimana gs = GiornoSettimana.parse(giorno);
+		UsoEnum19 gs = UsoEnum19.parse(giorno);
 		System.out.println(gs.name());
 		System.out.println(gs.ordinal());
 		System.out.println("ieri era " + gs.ieri());
 		System.out.println("domani sarà " + gs.domani());
 		System.out.println(" dovrò lavorare " + gs.domani().oreDaLavorare() + " ore");
 		
-		GiornoSettimana.parse("kkkk");
+		UsoEnum19.parse("kkkk");
 	}
 
 }
