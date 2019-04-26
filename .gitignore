@@ -29,3 +29,5 @@ bin
 17/
 18/
 Esercitazioni Tutorato 2018/Esercitazione9/soluzione_provaC_praticheLegali/prog-4ed\.jar
+*.db
+*.ini
