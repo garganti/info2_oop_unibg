@@ -26,8 +26,10 @@ public class DomandaDati {
 		// NON POSSO r = new Cerchio(5)
 		// posso saper qui se e è un rettangolo o un quadrato????
 		//instanceof
-		if (r instanceof Quadrato)
+		if (r instanceof Quadrato) {
 			System.out.println("questo è un quadrato");
+			System.out.println(" con lato " + ((Quadrato)r).getLato());
+		}
 		if (r instanceof Rettangolo)
 			System.out.println("questo è un rettangolo");
 		

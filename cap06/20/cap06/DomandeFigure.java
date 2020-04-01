@@ -5,6 +5,7 @@ import java.util.Vector;
 import prog.io.ConsoleInputManager;
 import prog.utili.Cerchio;
 import prog.utili.Figura;
+import prog.utili.Quadrato;
 import prog.utili.Rettangolo;
 
 public class DomandeFigure {
@@ -30,10 +31,16 @@ public class DomandeFigure {
 			case 'c':
 				figura = new Cerchio(in.readInt("raggio"));
 				break;
-			// TODO quadrato
+			case 'Q':
+			case 'q':
+				figura = new Quadrato(in.readInt("lato"));
+				break;
 			default:
+				System.out.println("carattere " + f + " non riconosciuto");
 				break;
 			}
+			// stampare i dati della figura appena inserita
+			System.err.println("area :"+ figura.getArea());
 			figure.add(figura);
 		}
 		stampaFiguraPiuGrande(figure);
