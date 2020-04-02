@@ -1,11 +1,16 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Vector;
 
 import prog.utili.SequenzaOrdinata;
 // voglio ordinare anche per nome?
 // usare comparator
 class ComparatorPerNome implements Comparator<Persona>{
+	// singleton
+	static final ComparatorPerNome  instance = new ComparatorPerNome();
 	
 	@Override
 	public int compare(Persona o1, Persona o2) {
@@ -48,7 +53,7 @@ public class Persona implements Comparable<Persona>{
 		amici.add(c);
 		for(Persona p: amici) System.out.println(p);
 		
-		Vector<Persona> amici2 = new Vector<Persona>();
+		List<Persona> amici2 = new ArrayList<Persona>();
 		amici2.add(a);
 		amici2.add(b);
 		amici2.add(c);
@@ -57,8 +62,14 @@ public class Persona implements Comparable<Persona>{
 		System.out.println(amici2);
 		// voglio confrontare/ordinare per nome
 		// uso il comparator
-		Collections.sort(amici2,new ComparatorPerNome());
+		//Collections.sort(amici2,new ComparatorPerNome());
+		Collections.sort(amici2,ComparatorPerNome.instance);
 		System.out.println(amici2);
+		// faccio un mescolatura
+		Collections.shuffle(amici2);
+		System.out.println(amici2);
+		// 
+		System.out.println(Collections.min(amici2));
 	}
 
 	
