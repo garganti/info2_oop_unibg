@@ -1,5 +1,5 @@
 
-public class Frazione {
+public class Frazione implements Comparable<Frazione>{
 	// campi
 	// numeratore e denominatore
 	// TIPO NOME
@@ -77,8 +77,12 @@ public class Frazione {
 		// NO divisione intera
 		// return (f.num/f.den) == (this.num/ this.den);
 		// se convert in double posso avere piccoli errori 
-		return (f.num * this.den) == (this.num *f.den);
-		
+		return (f.num * this.den) == (this.num *f.den);		
+	}
+	
+	// this è minore di f 
+	public boolean isMinore(Frazione f) {
+		return true;		
 	}
 	
 	
@@ -99,6 +103,17 @@ public class Frazione {
 		System.out.println(f4);
 		Frazione f5 = new Frazione("20/40");
 		System.out.println(f5);
+	}
+	// confronta this con o 
+	// se this < o return < 0 (ad esempio +1)
+	// se this == o return 0
+	// se this > o return > 0
+	public int compareTo(Frazione o) {
+		int prodottomisto = this.num*o.den -o.num *this.den;
+		if (this.den*o.den >0)
+			return prodottomisto;
+		else 
+			return - prodottomisto;
 	}
 
 }
