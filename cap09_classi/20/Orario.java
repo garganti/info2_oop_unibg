@@ -24,6 +24,7 @@ public class Orario {
 	
 	public static void setSeparatore(char c) {
 		SEPARATORE = Character.toString(c);
+		// non posso accedere a campi non static ore = 10;
 	}
 	
 	
