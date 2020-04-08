@@ -1,4 +1,4 @@
-import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
+import java.text.DecimalFormat;
 
 public class Orario {
 	// campi costanti
@@ -19,7 +19,10 @@ public class Orario {
 				Integer.parseInt(s.split(":")[1]));
 	}
 	public String toString() {
-		return ore + SEPARATORE + minuti;
+		// prima soluzione
+		//return ore + SEPARATORE + (minuti< 10? "0" + minuti : minuti);
+		DecimalFormat df = new DecimalFormat("00");
+		return df.format(ore) + SEPARATORE + df.format(minuti);
 	}	
 	
 	public static void setSeparatore(char c) {
@@ -38,8 +41,9 @@ public class Orario {
 		System.out.println(o);
 		//System.out.println(o2);		
 		System.out.println(new Orario("12:50"));
-		Orario.setSeparatore('/');
+		//Orario.setSeparatore('/');
 		System.out.println(new Orario("12:50"));
+		System.out.println(new Orario("14:08"));
 	}	
 }
 /*class A{
