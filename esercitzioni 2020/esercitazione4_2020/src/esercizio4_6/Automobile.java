@@ -1,9 +1,10 @@
 package esercizio4_6;
 
 public class Automobile implements Comparable<Automobile>{
+	private static final int START_ID = 0;
 	private int id;
 	private double km;
-	static int numerodiautomobili = 0;
+	static int numerodiautomobili = START_ID;
 	/*public Automobile(int id, double k) {
 		this(k); this.id = id;}*/
 	public Automobile(double k) {this.km = k;
