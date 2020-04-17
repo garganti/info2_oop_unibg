@@ -12,7 +12,11 @@ public class NullPointerexample {
 	
 	public static void main(String[] args) {
 		Studente bravo = new Studente();
-		bravo.voti.add(30);
+		//bravo.voti.add(30);
+		
+		Integer i = null;
+		Integer x = i*20;
+		
 	}
 
 }

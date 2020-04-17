@@ -6,7 +6,10 @@ import java.util.Stack;
 public class HP12 {
 
 	public static void main(String[] args) {
+		// 3 * (5 + 6)
 		calcolaEspressione("3 5 6 + *");
+		// 3 + (5 * 6)
+		calcolaEspressione("3 5 6 * +");
 		// errori:
 		// troppi operatori
 		calcolaEspressione("3 5 + *");
