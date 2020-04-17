@@ -9,6 +9,7 @@ public class ProvaEccezioni {
 			int a[] = { 6, 7, 8, 9 };
 			System.out.println(a[y]);
 		} catch (ArithmeticException e) {
+			System.out.println(e.getMessage());
 			System.out.println("mi spiace y è zero");
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("mi spiace non posso accedere a quella posizione");
