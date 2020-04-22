@@ -11,7 +11,11 @@ class PiattoIDSbagliatoException extends RuntimeException{
 } 
 
 public class Piatto {
-	static List<String> idPizze = new ArrayList<String>();
+	// memorizza tutti gli id di tutti piatti
+	static List<String> idPiattiCreati = new ArrayList<String>();
+	// id si questo piatto
+	String id;
+	
 	/**
 	 * 
 	 * @param id identificavo univoco del piatto
@@ -19,10 +23,11 @@ public class Piatto {
 	 * @param prezzo prezzo
 	 */
 	public Piatto(String id, int quan, int prezzo) {
-		if (idPizze.contains(id)) {
+		if (idPiattiCreati.contains(id)) {
 			throw new PiattoIDSbagliatoException();
 		}
-		idPizze.add(id);
+		idPiattiCreati.add(id);
+		this.id = id;
 	}	
 	
 }
