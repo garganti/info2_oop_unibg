@@ -2,8 +2,6 @@ package matrici;
 
 import java.util.ArrayList;
 
-import com.sun.org.apache.bcel.internal.generic.CALOAD;
-
 public class Matrice {
 	private ArrayList<ArrayList<Integer>> dati;
 	protected int numeroRighe, numeroColonne;
