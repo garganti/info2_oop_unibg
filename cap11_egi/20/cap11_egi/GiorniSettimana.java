@@ -4,7 +4,11 @@ import java.util.Arrays;
 
 public enum GiorniSettimana {
 	
-	LUN(8),MAR(7),MER(10),GIO(15),VEN(8),SAB(4),DOM(0);
+	LUN(8),MAR(7),MER(10),
+	GIO(15){
+		void foo(){}
+	},
+	VEN(8),SAB(4),DOM(0);
 
 	// campo 
 	private int oreLavorative;
