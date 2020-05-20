@@ -34,6 +34,10 @@ public class MergeSorter {
 		int temp[] = new int[max-min+1];
 		// faccio il merge in un array temporaneo
 		for(int i= 0; i < temp.length; i++) {
+			// quando devo copiare l'elemento di sx in temp
+			// 1. se a dx non ho più elementi  dx > max
+			// oppure 2. ho ancora qualche elemento a sx da copiare (sx <= med)
+			// e questo elemento è minore dell'elemento alla posizione dx
 			if (dx > max || sx <= med && a[sx]<a[dx]) {
 				// copio l'elemento di sinistra
 				temp [i] = a[sx];
