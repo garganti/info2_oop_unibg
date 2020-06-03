@@ -1,9 +1,11 @@
 PROVA B  LISTA ORDINATA DI STRINGHE – 01/02/2019
 
-Implementa una lista dinamica ordinata NON GENERICA per memorizzare un insieme di stringhe. L'ordimanento deve essere alfabetico in modo inverso e ignorando maiuscolo e minuscolo. 
-Implementa sia la lista in un unico file con nome tuo CognomeNome + numero che ti è stato consegnato.java usando questo schema
+Implementa una lista dinamica ordinata NON GENERICA per memorizzare un insieme di stringhe. 
+L'ordimanento deve essere alfabetico in modo _inverso_ e ignorando maiuscolo e minuscolo. 
+Implementa sia la lista in un unico file con nome tuo CognomeNome che ti è stato consegnato.java usando questo schema
 
-CognomeNomeNUMERO.java
+CognomeNome.java
+
 package cognomenome;
 
 class Lista ... {
@@ -17,11 +19,12 @@ public class CognomeNomeNUMEROMATRICOLA{
 }
 
 
-
 La lista deve avere i seguenti metodi:
 
     • insert per inserire una stringa in ordine (inverso ignorando minuscolo maiuscolo) 
     • print che stampa il contenuto della lista
-    • remove che prende un intero X e rimuove la stringa a posizione X nela lista (se esiste altrimenti non fa nulla).
+    • remove che prende un intero X e rimuove la stringa 
+    	a posizione X nella lista (se esiste altrimenti non fa nulla).
 
-Nel main fai un po' di prove in cui provi ad inserire programmaticamente qualche stringa, stampare la lista, rimuovere qualche stringa. Non fare alcun input con l'utente.
+Nel main fai un po' di prove in cui provi ad inserire programmaticamente qualche stringa, stampare la lista, 
+rimuovere qualche stringa. Non fare alcun input con l'utente.
