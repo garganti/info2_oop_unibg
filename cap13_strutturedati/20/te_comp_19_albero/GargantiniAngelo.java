@@ -1,4 +1,4 @@
-package te_comp_19;
+package te_comp_19_albero;
 class Persona implements Comparable<Persona>{
 	String nome;
 	public Persona(String string) {
@@ -9,18 +9,15 @@ class Persona implements Comparable<Persona>{
 		return nome.compareTo(o.nome);
 	}
 }
-
 class AlberoPersone{
 	NodoAlbero root;
 	class NodoAlbero{
 		Persona dato;
 		AlberoPersone sx, dx;
-	}
-	
+	}	
 	public AlberoPersone() {
 		root = null;
 	}
-	
 	void insert(Persona p) {
 		if (root == null) {
 			root = new NodoAlbero();
@@ -34,16 +31,11 @@ class AlberoPersone{
 				root.sx.insert(p);
 			}
 		}
-	
 	}
 	void print(){
-		
 	}
-	
 }
-
 public class GargantiniAngelo {
-
 	public static void main(String[] args) {
 		AlberoPersone ap = new AlberoPersone();
 		ap.insert(new Persona("pippo"));
