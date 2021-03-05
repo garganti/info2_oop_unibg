@@ -7,7 +7,7 @@ public class SommaFrazioni {
 	public static void main(String[] args) {
 		ConsoleInputManager in = new ConsoleInputManager();
 		ConsoleOutputManager out = new ConsoleOutputManager();
-		Frazione f1;
+		//Frazione f1;
 		Frazione f2;
 		Frazione somma;
 		// domandare all'utente f1
