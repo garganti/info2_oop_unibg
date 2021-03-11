@@ -4,6 +4,8 @@ import prog.utili.Frazione;
 
 public class CastImpliciti {
 	public static void main(String[] args) {
+		
+		
 		int x = 0;
 
 		long h = x; // cast (conversione) implicita
