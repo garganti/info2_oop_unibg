@@ -1,3 +1,6 @@
+import java.math.BigInteger;
+
+import prog.utili.Frazione;
 
 public class CastImpliciti {
 	public static void main(String[] args) {
@@ -18,9 +21,24 @@ public class CastImpliciti {
 		
 		System.out.println((byte)12345);
 		
-		long l = 1000000000000000001L;
+		long l = 1000000000000000123L;
 		System.out.println(l);
-		System.out.println((double)l);
+		double d = l;
+		System.out.println(d);
+		
+		//BigInteger bg 
+		
+		
+		String s = "ciao" + 3 +7;
+		String s2 = 3 + 7 + "ciao";
+		
+		
+		Frazione f = new Frazione(5,6);
+		
+		String s3 = " il risultato è " + f.toString();		
+		// equivalente
+		String s4 = " il risultato è " + f;
+		
 		
 	}
 }
