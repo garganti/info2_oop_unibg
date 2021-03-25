@@ -28,6 +28,8 @@ public class Esercizio3_3 {
 				}
 			}			
 		}
+		// chiudiamo il file
+		java.close();
 		// ristampa le parole
 		for(String s: parole) {
 			System.out.println(s);
