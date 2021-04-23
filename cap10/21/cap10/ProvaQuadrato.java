@@ -10,7 +10,11 @@ class Quadrato extends Rettangolo{
 		super(l,l);
 	}
 	public Quadrato() {
-		this(0);
+		this(zero());
+	}
+	
+	private static int zero() {
+		return 0;
 	}
 }
 public class ProvaQuadrato{	
