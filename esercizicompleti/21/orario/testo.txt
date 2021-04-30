@@ -1,0 +1,47 @@
+A. Scrivere una classe astratta Ora, che 
+implementa l'interfaccia Comparable, per 
+rappresentare gli orari  di una giornata, 
+con i soli membri:
+
+        public abstract int getHH()
+        che restituisce l'ora (da 0 a 23);
+
+        public abstract int getMM()
+        che restituisce i minuti (da 0 a 59);
+
+        public int compareTo(Object o)
+        che restituisce la differenza in minuti tra l'ora 
+        this e l'ora o ricevuta come parametro;
+
+        public boolean equals(Object obj)
+        che restituisce true solo se gli orari coincidono;
+
+B. Scrivere una classe concreta OraHM che realizza la classe 
+   astratta Ora utilizzando due  variabili di istanza di tipo int 
+   per memorizzare rispettivamente i minuti e le ore, e con 
+   l'ovvio costruttore con due argomenti di tipo int (se i valori 
+   passati al costruttore non sono validi, 
+   allora assegnare 0 a entrambe le variabili).
+
+   Aggiungere il metodo toString() per restituire una descrizione 
+   dell'ora nel formato "OraHM[hh:mm]".
+
+C. Scrivere una classe concreta OraSec che realizza la classe 
+   astratta Ora sfruttando una sola variabile 
+   di istanza di tipo int per memorizzare i secondi trascorsi 
+   nella giornata (da 0 a 86399, estremi inclusi). 
+   Fornire l'ovvio costruttore con un argomento di tipo int. 
+   
+***Quale metodo della classe Ora conviene 
+   sovrascrivere?
+
+   Aggiungere il metodo toString() per restituire una descrizione dell'ora nel formato "OraSec[hh:mm:ss]".
+
+D.  Scrivere un programma TestOra che:
+
+        memorizza nelle variabili o1 e o2 di tipo Ora due oggetti, uno per ciascuna realizzazione,
+        creati con valori delle variabili d'istanza letti da tastiera;
+
+        sperimenta i metodi disponibili nell'interfaccia;
+
+        stampa gli orari.
