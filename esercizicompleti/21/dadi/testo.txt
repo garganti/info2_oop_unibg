@@ -1,0 +1,16 @@
+
+Si scriva una classe Dado per modellare un
+dado a 6 facce. 
+Si definisca un metodo lancia che restutisce 
+un valore pseudo casuale da 1 a 6.
+
+
+Si scrivano le due sottoclassi
+- DadoTruccato: quando esce un 6 non ne può uscire un altro prima 
+  di 10 lanci
+- DadoConMemoria: ogni lancio genera un numero diverso 
+dai due precedenti
+
+Per testare le classi si scriva un programma che legge
+un intero n, crea tre dadi, lancia per n volte ogni dado
+calcola la media dei lanci

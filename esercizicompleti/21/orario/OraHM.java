@@ -19,7 +19,7 @@ public class OraHM extends Ora{
 	@Override
 	public String toString() {
 		//return "OraHM["+ora + ":" + minuti + "]";
-		return String.format("OraHM[%2d:%2d",ora, minuti);
+		return String.format("OraHM[%2d:%2d]",ora, minuti);
 	}
 
 }
