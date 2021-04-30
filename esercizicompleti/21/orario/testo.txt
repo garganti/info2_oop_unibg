@@ -9,7 +9,7 @@ con i soli membri:
         public abstract int getMM()
         che restituisce i minuti (da 0 a 59);
 
-        public int compareTo(Object o)
+        public int compareTo(Ora o)
         che restituisce la differenza in minuti tra l'ora 
         this e l'ora o ricevuta come parametro;
 
