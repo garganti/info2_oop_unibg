@@ -21,7 +21,7 @@ B. Scrivere una classe concreta OraHM che realizza la classe
    per memorizzare rispettivamente i minuti e le ore, e con 
    l'ovvio costruttore con due argomenti di tipo int (se i valori 
    passati al costruttore non sono validi, 
-   allora assegnare 0 a entrambe le variabili).
+   allora assegnare 0 a entrambe le variabili - oppure eccezione).
 
    Aggiungere il metodo toString() per restituire una descrizione 
    dell'ora nel formato "OraHM[hh:mm]".
