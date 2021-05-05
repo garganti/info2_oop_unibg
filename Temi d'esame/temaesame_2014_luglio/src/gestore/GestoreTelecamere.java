@@ -1,7 +1,5 @@
 package gestore;
 
-import com.sun.org.apache.bcel.internal.generic.GETSTATIC;
-
 import prog.io.FileInputManager;
 import prog.utili.Sequenza;
 import prog.utili.SequenzaOrdinata;

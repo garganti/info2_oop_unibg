@@ -1,7 +1,5 @@
 package prenotazioni;
 
-import com.sun.xml.internal.bind.v2.runtime.RuntimeUtil.ToStringAdapter;
-
 import prog.utili.Data;
 
 public class PrenotazioneIndividuale extends Prenotazione {
