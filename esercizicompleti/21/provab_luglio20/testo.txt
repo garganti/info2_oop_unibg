@@ -8,7 +8,8 @@ di automobili la ordina usando un algoritmo di tua scelta (merge sort vale +3 pu
 di automobili (anche non ordinata) restituisce quella che ha più km (se non esiste restituisce null).
 
 + Implementa poi un metodo statico trovaAutoComKm che presa una lista (java.util.List) 
-di automobili ordinata, e un numero di kilometri KM, restituisce l'auto che ha km KM (se ce ne sono diverse ne restituisce una, se non ne esiste restituisce null).
+di automobili ordinata, e un numero di kilometri KM, restituisce l'auto che ha km KM 
+(se ce ne sono diverse ne restituisce una, se non ne esiste restituisce null).
 
 Scrivi quindi un main in cui testi con un po' di dati tutti e tre i metodi che hai implementato. 
  

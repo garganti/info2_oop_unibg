@@ -1,5 +1,6 @@
 package provab_luglio20;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,6 +26,7 @@ class Automobile implements Comparable<Automobile>{
 	}
 	
 	// bubble sort
+	// solo 2 usare il merge sort
 	static void ordinaAuto(List<Automobile> l) {
 		boolean ordinato;
 		do {
@@ -45,7 +47,7 @@ class Automobile implements Comparable<Automobile>{
 		// TODO
 		// sol 2. soluzione ciclo for
 		if (l.size() == 0) return null;
-		// memorizza la più vecchia - inizilamento assumo la prima
+		// memorizza la più vecchia - inizialmente assumo la prima
 		Automobile piuVecchia = l.get(0);
 		for(int i=1; i < l.size(); i++) {
 			// se trovo un'auto più vecchia di quella ipotizzata
@@ -88,7 +90,12 @@ public class GargantiniProvaBLuglio20 {
 		Automobile panda = new Automobile(100000);
 		Automobile uno = new Automobile(9000);
 		Automobile ferrari = new Automobile(50);
-		List<Automobile> mieauto = Arrays.asList(panda,uno,ferrari);
+		//List<Automobile> mieauto = Arrays.asList(panda,uno,ferrari);
+		ArrayList<Automobile> mieauto = new ArrayList<Automobile>();
+		mieauto.add(ferrari);
+		mieauto.add(panda);
+		mieauto.add(uno);
+		
 		System.out.println(mieauto);
 		Automobile.ordinaAuto(mieauto);
 		System.out.println(mieauto);
