@@ -22,12 +22,18 @@ enum GiornoSettimana {
 	// ridefinire dei metodi
 	@Override
 	public String toString() {
-		return switch (this) {
+/* java 14		return switch (this) {
 		case LUN -> "Lunedì";
 		case MAR -> "Martedì";		
 		default ->
 			super.toString();
-		};
+		};*/
+		switch (this) {
+		case LUN : return "Lunedì";
+		case MAR : return "Martedì";		
+		default :
+			return super.toString();
+		}
 	}
 	// nuovi metodi
 	public int numHLavorative() {
