@@ -107,6 +107,8 @@ class ComparatorPerCriticita implements Comparator<Referto>{
 	@Override
 	public int compare(Referto o1, Referto o2) {
 		return Double.compare(o1.criticity(), o2.criticity());
+		//if (o1.criticity() > o2.criticity()) return 1;
+		
 	}
 	
 }
