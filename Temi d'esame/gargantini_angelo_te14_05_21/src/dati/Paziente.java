@@ -14,6 +14,9 @@ public class Paziente {
 	// tengo memoria di tuui gli id usati
 	private static List<Integer> idUsati = new ArrayList<>();
 	
+	// TODO
+	// data di nascita e residenza (string)
+	
 	// l'id viene calcolato dal nome
 	public Paziente(String nome) {
 		this(nome, calcolaID(nome));
