@@ -7,7 +7,7 @@ import eccezioni.IdUsatoException;
 
 public class Paziente {
 	
-	String nome;
+	private String nome;
 
 	// codice numerico univoco 
 	int id;
@@ -18,11 +18,11 @@ public class Paziente {
 	// data di nascita e residenza (string)
 	
 	// l'id viene calcolato dal nome
-	public Paziente(String nome) {
+	public Paziente(String nome){
 		this(nome, calcolaID(nome));
 	}
 	// id passato insieme al nome
-	public Paziente(String nome, int id) {
+	public Paziente(String nome, int id){
 		if (idUsati.contains(id))
 			throw new IdUsatoException();
 		this.id = id;

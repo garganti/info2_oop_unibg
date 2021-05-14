@@ -18,5 +18,16 @@ public class RefertoSingolo extends Referto {
 	public String toString() {
 		return super.toString() + " " + nome + " " + risultato;
 	}
+
+	@Override
+	public double criticity() {
+		return risultato.valore;
+	}
+
+	@Override
+	public boolean validity() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 }

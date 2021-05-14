@@ -23,10 +23,17 @@ abstract public class Referto {
 		id = numeroReferti ++;
 	}
 	
-	
+
 	@Override
 	public String toString() {
 		return id + " " + data + " paziente " + paziente;
 	}
+	// restuituisce la criticità del referto
+	public abstract double criticity();
+	
+	/**
+	 * @return true se e solo se il referto è ancora valido
+	 */
+	public abstract boolean validity();
 	
 }

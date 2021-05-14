@@ -1,6 +1,7 @@
 package main;
 
 import dati.Paziente;
+import dati.RefertoMultiplo;
 import dati.RefertoSingolo;
 import dati.RisultatoReferto;
 import eccezioni.IdUsatoException;
@@ -26,6 +27,12 @@ public class ProvaApplicativo {
 		
 		RefertoSingolo rs = new RefertoSingolo(oggi, p3, "tutto ok", RisultatoReferto.POSITIVO);
 		System.out.println(rs);
+		// referto multiplo
+		RefertoMultiplo rm = new RefertoMultiplo(oggi, p2);
+		System.out.println(rm);
+		rm.addRisultato("ferro", 15);
+		rm.addRisultato("magnesio", 1000);
+		System.out.println("criticità " + rm.criticity());
 		
 	}
 
