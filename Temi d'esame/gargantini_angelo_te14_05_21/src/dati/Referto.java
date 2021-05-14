@@ -3,7 +3,7 @@ package dati;
 import prog.utili.Data;
 
 // referto generico
-abstract public class Referto {
+abstract public class Referto implements Comparable<Referto>{
 
 	protected Data data;
 	
@@ -35,5 +35,15 @@ abstract public class Referto {
 	 * @return true se e solo se il referto è ancora valido
 	 */
 	public abstract boolean validity();
+	
+	// restituise l'id del paziente a cui si riferisce questo referto
+	public int getPazienteID() {
+		return paziente.id;
+	}
+	// Rferto è comparable per Data
+	@Override
+	public int compareTo(Referto o) {
+		return this.data.compareTo(o.data);
+	}
 	
 }

@@ -16,8 +16,11 @@ public class RefertoImmagine extends Referto {
 
 	@Override
 	public boolean validity() {
-		// TODO Auto-generated method stub
-		return false;
+		// valida sempre se criticità è 100
+		if (criticity() == 10) return true;
+		Data oggi = new Data();
+		int giorniTrascorsi = data.quantoManca(oggi);
+		return giorniTrascorsi <= 2;
 	}
 
 }

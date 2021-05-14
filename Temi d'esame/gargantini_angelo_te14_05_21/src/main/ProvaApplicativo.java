@@ -5,6 +5,7 @@ import dati.RefertoMultiplo;
 import dati.RefertoSingolo;
 import dati.RisultatoReferto;
 import eccezioni.IdUsatoException;
+import gestore.GestoreReferti;
 import prog.utili.Data;
 
 public class ProvaApplicativo {
@@ -33,7 +34,19 @@ public class ProvaApplicativo {
 		rm.addRisultato("ferro", 15);
 		rm.addRisultato("magnesio", 1000);
 		System.out.println("criticità " + rm.criticity());
+	
+		// provo adesso il gestore
+		GestoreReferti gr = new GestoreReferti();
 		
+		gr.inserisciReferto(rs);
+		gr.inserisciReferto(rm);
+		gr.stampaPerData();
+		// stampo per paziente
+		gr.stampaGruppoPaziente();
+		
+		// rimuovo il referto rs (id pziente è 5)
+		gr.cancella(5);
+		gr.stampaPerData();
 	}
 
 }
