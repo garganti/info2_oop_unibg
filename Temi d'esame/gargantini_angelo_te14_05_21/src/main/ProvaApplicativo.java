@@ -37,6 +37,10 @@ public class ProvaApplicativo {
 	
 		// provo adesso il gestore
 		GestoreReferti gr = new GestoreReferti();
+		// leggiamo da file
+		gr.leggiDaDile();
+		
+		// inserisci altri referti
 		
 		gr.inserisciReferto(rs);
 		gr.inserisciReferto(rm);
