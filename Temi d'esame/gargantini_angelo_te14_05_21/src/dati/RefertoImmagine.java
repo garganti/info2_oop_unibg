@@ -8,4 +8,16 @@ public class RefertoImmagine extends Referto {
 		super(d, p);
 	}
 
+	@Override
+	public double criticity() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean validity() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

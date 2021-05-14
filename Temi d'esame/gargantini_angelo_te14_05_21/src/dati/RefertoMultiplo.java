@@ -48,6 +48,8 @@ public class RefertoMultiplo extends Referto {
 
 	@Override
 	public boolean validity() {
+		// TODO
+		return true;
 	}
 
 	
